@@ -1,0 +1,544 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+.home-page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(./img/d37f23995c7d788734bf4f32125b461a.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 1000;
+}
+
+.header-left
+{   width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a
+{
+    color: #DACDB7;
+    font-size: 20px;
+    font-weight:bold;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 15px;
+    cursor: pointer;    
+}
+header a:hover
+{
+    color: #BDAE96;
+    cursor: pointer;
+}
+.header-right a
+{
+    font-size: 30px;
+}
+.home
+{
+    height: 100px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home h1
+{
+    font-size: 2.3rem;
+    color: #BDAE96;
+    margin-bottom: 20px;
+}
+.inputs
+{   
+    padding: 20px 40px;
+    background-color:#DACDB7;
+    border-radius: 40px;
+    display: flex
+}
+.inputs input 
+{   color: white !important;
+    width: max-content;
+    height: 50px;
+    background-color: #BDAE96;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin: 0 10px; 
+}
+.inputs button 
+{   color: white !important;
+    width:max-content;
+    height: 50px;
+    background-color: #BDAE96;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin: 0 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputs input::placeholder
+{
+    color: white;
+    width: max-content;
+}
+.mainn
+{   height: 80vh;
+    background-color: #BDAE96;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.titre
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Destinations
+{
+    width:100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.mainn h2 
+{
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+.mainn P
+{
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.1;
+}
+.déstination 
+{
+    width: 18%;
+    height: 85%;
+    background-image:url(./img/Paris\ Hotels\ With\ Eiffel\ Tower\ View.jpg) ;
+    border: solid 5px #DACDB7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between
+    
+}
+.déstination a
+{   width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+.stars
+{   border: none;
+    padding: 0 2px;
+    margin-right: 3px;
+    border-radius: 7px;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    color: white;
+}
+.material-symbols-rounded {
+    color: white;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 20
+  
+}
+.déstination button
+{
+    border: none;
+    padding: 3px 6px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+.Dubai
+{
+    background-image:url(./img/Unexpected\ fact\ of\ Dubai.jpg) ;
+}
+.turkie
+{
+    background-image:url(./img/Turquía\,\ autorretrato\ en\ diez\ fotos.jpg);
+}
+.bali 
+{
+    background-image:url(./img/BALI\ -\ awesome\ waterfalls\ near\ UBUD.jpg); 
+}
+.n2
+{
+    height: 75vh;
+}
+.lesAvis
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.lesAvis button
+{
+    font-size: 60px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+.avis
+{
+    width: 55%;
+    height: 100%;
+    background-image: url(./img/cadre-removebg-preview.png); 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.client
+{
+    width: 30%;
+    height: 20%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.client img
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.nom
+{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nom P
+{
+    margin: 0;
+   font-size: small;
+}
+.n3
+{
+    height: 87vh;
+}
+.Offres
+{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.Offre
+{
+   width: 40%;
+   height: 100%;
+   padding: 10px;
+   background-color: #DACDB7;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-around;
+
+}
+.Offre p
+{
+    font-size: medium;
+    color: black;
+    line-height: 1.3;
+}
+.Offre-ph
+{
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+
+}
+ .ph
+{  height: 70%;
+    background-image: url(./img/Madinah.jpg);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.ph a 
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+.Hajj
+{
+    background-image: url(./img/Holy\ Place\ Kabba.jpg);
+}
+.ph button
+{   
+    border: none;
+    padding: 3px 6px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    height:20px ;
+
+}
+.Offre-inf
+{
+    width: 50%;
+    
+}
+.n4
+{
+    height: 90vh;
+}
+.voyagesp
+{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.voyagep
+{
+    width: 20%;
+    height: 100%;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.vp-ph
+{   width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-image: url(./img/London_Wallpaper___Fotografia_di_città\,_Fotografie_di_viaggio\,.jpg);
+}
+.vp-ph a
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+.vp-ph button
+{   
+    border: none;
+    padding: 3px 6px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    height:20px ;
+
+}
+.Suisse
+{
+    background-image: url(./img/-3.jpg);
+}
+.Tokyo
+{
+    background-image: url(./img/Tokyo\,\ Japan.jpg);
+}
+.Grèce
+{
+    background-image: url(./img/The\ Most\ Beautiful\ Towns\ In\ Greece.jpg);
+}
+.vp-inf
+{
+    height: 15%;
+    width: 95%;
+       
+}
+.vp-inf p
+{
+    color: black;
+    font-size: medium;
+
+}
+.Alger
+{
+    background-image: url(./img/alger.jpg);
+}
+.Oran
+{
+    background-image: url(./img/oran.jpg);
+}
+.Costantine
+{
+    background-image: url(./img/constantine.jpg);
+}
+.Taghit
+{
+    background-image: url(./img/taghit.jpg);
+}
+footer
+{
+    height: 50vh;
+    width: 100%;
+    background-color: #4F4A4A;
+    display: flex;
+}
+.footer-left
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #DACDB7;
+    font-size: 1.1rem;
+}
+footer h2{
+    position: relative;
+}
+footer h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; 
+    left: -5px;
+    width: 105%;
+    height: 2px; 
+    background-color: #DACDB7; 
+  }
+.footer-left div
+{
+    border: solid 1px white ;
+    padding: 20px;
+    text-align: center;
+    
+}
+.footer-midle
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #DACDB7;
+    font-size: 1.1rem;
+}
+.footer-midle ul
+{
+    text-align: center;
+    line-height: 1.3;
+}
+.footer-right
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #DACDB7;
+    font-size: 1.1rem;
+}
+.footer-right input
+{
+    width: 140px;
+    height: 35px;
+    border: solid 3px #DACDB7;
+    border-radius: 30px;
+    background-color: #827E7F;
+    padding-left: 5px;
+}
+.footer-right input::placeholder
+{
+    color: #DACDB7;
+    font-size: 1.05rem;
+}
+.Coordonnées
+{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Coordonnées ul
+{   width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: medium;
+}
+.Coordonnées ul span
+{
+    margin-right: 10px;
+}
+.Newsletter
+{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
