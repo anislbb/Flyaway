@@ -117,22 +117,49 @@ header a:hover {
     margin: 10px;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.container {
-    display: flex;
 
-    flex-direction: row;
-}
 
 .vol {
-    height: 200px;
+    height: 250px;
     width: calc(100% - 40px);
     background-color: white;
-    margin: 10px;
+    margin: 5px;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr 1fr;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+p {
+    font-family: "League Spartan", sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.distination {
+    background-color: blue;
+}
+
+.time {
+    background-color: yellow;
+}
+
+.reservation {
+    background-color: red;
 }
 
 
