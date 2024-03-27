@@ -110,6 +110,30 @@ header a:hover {
     background-position: center;
 }
 
+.vols {
+    height: 800px;
+    width: calc(100% - 20px);
+    background-color: #DACDB7;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+
+    flex-direction: row;
+}
+
+.vol {
+    height: 200px;
+    width: calc(100% - 40px);
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+}
 
 
 
