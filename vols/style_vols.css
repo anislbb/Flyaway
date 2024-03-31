@@ -27,7 +27,7 @@ header {
 
 header a {
     color: #DACDB7;
-    font-size: 20px;
+    font-size:calc(0.5rem + 1.5vw);
     font-weight: bold;
     font-weight: 500;
     text-decoration: none;
@@ -54,7 +54,7 @@ header a:hover {
 }
 
 .home h1 {
-    font-size: 2.3rem;
+    font-size:calc(1rem + 1.5vw);
     color: #BDAE96;
     margin-bottom: 20px;
 }
@@ -193,7 +193,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     color: #DACDB7;
-    font-size: 1.1rem;
+    font-size:calc(0.05rem + 1.3vw);
 }
 
 footer h2 {
@@ -225,7 +225,7 @@ footer h2::after {
     align-items: center;
     justify-content: space-around;
     color: #DACDB7;
-    font-size: 1.1rem;
+    font-size:calc(0.05rem + 1.3vw);
 }
 
 .footer-midle ul {
@@ -241,7 +241,7 @@ footer h2::after {
     align-items: center;
     justify-content: space-around;
     color: #DACDB7;
-    font-size: 1.1rem;
+    font-size:calc(0.05rem + 1.3vw);
 }
 
 .footer-right input {
@@ -271,7 +271,7 @@ footer h2::after {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    font-size: medium;
+    font-size:calc(0.05rem + 1.3vw);
 }
 
 .Coordonnées ul span {
