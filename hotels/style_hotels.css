@@ -109,6 +109,16 @@ header ul
     {
         background-color:#BDAE96 ;
     }
+    .header-right a 
+    {
+        background-color: transparent;
+        color: #DACDB7;
+    }
+    .header-right a:hover
+    {
+        background-color: transparent;
+        color: #DACDB7;
+    }
     .show-menu
     {
         opacity: 1;
