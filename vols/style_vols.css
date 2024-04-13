@@ -10,22 +10,15 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
+    height: 50px;
+    padding: 0 5%;
     z-index: 1000;
 }
-
-.header-left {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header a {
+    text-decoration: none;
 }
 
-header a {
+ /* header a {
     color: #DACDB7;
     font-size:calc(0.5rem + 1.5vw);
     font-weight: bold;
@@ -34,11 +27,253 @@ header a {
     margin: 0 15px;
     cursor: pointer;
 }
-
+header a:visited
+{
+    color: #C8B18C;
+}
 header a:hover {
     color: #BDAE96;
     cursor: pointer;
+}   */
+header ul
+{
+    list-style: none;
 }
+.nav-data
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.MENU
+{ 
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+.menu,
+.close
+{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s , transform .4s;
+    color: #DACDB7;
+}
+.close
+{
+    opacity: 0;
+} 
+@media  screen and (max-width:1118PX ) {
+    .home
+    {
+        opacity: 0;
+    }
+    .header-left
+    {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0; 
+        transition: top .4s , opacity .3s;
+
+    }
+    .header-left::-webkit-scrollbar
+    {
+        width: 0;
+    }
+   
+    .link
+    {
+        color: white;
+        background-color: #DACDB7;
+        font-weight: bold;
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color .3s;
+        text-decoration: none;
+
+    }
+    .link:hover
+    {
+        background-color:#BDAE96 ;
+    }
+    .header-right a 
+    {
+        background-color: transparent;
+        color: #DACDB7;
+    }
+    .header-right a:hover
+    {
+        background-color: transparent;
+        color: #DACDB7;
+    }
+    .show-menu
+    {
+        opacity: 1;
+        top: 3.5rem;
+        pointer-events: initial;
+    }
+    .show-icon .menu
+    {
+        opacity: 0;
+        transform: rotate(90deg);
+    } 
+    .show-icon .close
+    {
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+    .dropdown-item
+    {
+        cursor: pointer;
+
+       
+    }
+    .dropdown-arrow
+    {
+        font-size: 1.25rem;
+        font-weight: initial;
+        transition: transform .4s;
+    }
+    .hotel-link
+    {
+        padding: 1.25rem 1.25rem 1.25rch 2.5rem;
+        color: white;
+        background-color: #BDAE96;
+        display: flex;
+        align-items: center;
+        column-gap: 5rem;
+        font-weight: bold;
+        transition: background-color .3s;
+        text-decoration: none;
+    }
+    .hotel-link:hover
+    {
+        background-color:rgba(189, 174, 150, 0.9) ;
+    }
+    .liste-hotels
+    {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .4s ease-out;
+        background-color: #DACDB7;
+    }
+    .dropdown-item:hover .liste-hotels
+    {
+       max-height:1000px ;
+       transition: max-height .4s ease-in;
+    }
+    .dropdown-item:hover .dropdown-arrow
+    {
+        transform: rotate(180deg);
+    }
+}
+@media  screen and (min-width:1118PX )
+{
+    header
+   {
+       margin-inline: auto;
+       display: flex;
+       justify-content: space-between;
+
+    }
+
+    .MENU
+    {
+        display: none;
+    }
+   .header-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .liste 
+    {
+        height: 100%;
+        display: flex;
+        column-gap: 3rem;
+    }
+    .link
+    {
+       height: 100%;
+       padding: 0;
+       justify-content: initial;
+       color: #DACDB7; 
+       font-size:calc(0.5rem + 1.5vw);
+       font-weight: bold;
+       font-weight: 500;
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+   
+    }
+    .dropdown-item
+    {   min-width: max-content;
+        position: relative;
+    }
+    .liste-hotels {
+        max-height: initial;
+        overflow: initial;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, top .3s;
+      }
+      .hotel-link {
+        padding: 1.25rem 1.25rem 1.25rch 2.5rem;
+        color: white;
+        background-color: #BDAE96;
+        display: flex;
+        align-items: center;
+        column-gap: 5rem;
+        font-weight: bold;
+        transition: background-color .3s;
+        text-decoration: none;
+      }
+      .hotel-link:hover
+      {
+          background-color:rgba(189, 174, 150, 0.5) ;
+      }
+      .dropdown-item:hover .liste-hotels
+       {
+        opacity: 1;
+        top:40px;
+        pointer-events: initial;
+        transition: top .3s;
+       }
+    .liste-hotels
+    {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .4s ease-out;
+    }
+    .dropdown-item:hover .liste-hotels
+    {
+       max-height:1000px ;
+       transition: max-height .4s ease-in;
+    }
+    .dropdown-item:hover .dropdown-arrow
+    {
+        transform: rotate(180deg);
+    }
+}
+
 
 .header-right a {
     font-size: 30px;
@@ -147,6 +382,7 @@ p {
     font-family: "League Spartan", sans-serif;
     font-size: large;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -154,14 +390,28 @@ p {
     background-color: blue;
 }
 
+
 .time {
     background-color: yellow;
 }
 
 .reservation {
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.reservation button
+{
+    padding: 10px 15px;
+    background-color:#BDAE96 ;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size:calc(0.5em + 1.1vw);
+}
 
 
 

@@ -21,17 +21,86 @@
     <main>
         <div class="home-page">
             <header>
-                <div class="header-right">
-                    <a href="../index.html" st>
-                        <img src="../img/logo6.png" alt="" style="height: 27px; position: relative; top: 2px;">
-                        <b>FlyAway.</b></a>
+                <div class="nav-data">
+                  <div class="header-right">
+                     <a href="../index.html" class="link" >
+                       <img src="../img/logo6.png" alt="" style="height: 27px; position: relative; top: 2px;">
+                       <b>FlyAway.</b></a>
+                 </div>
+                 <div class="MENU " id="MENU">
+                    <span class="material-symbols-outlined menu">
+                      menu
+                      </span>
+                    <span class="material-symbols-outlined close">
+                      close
+                    </span>
+                 </div>
                 </div>
-                <div class="header-left">
-                    <a href="../hotels/hotels.html">Hotels</a>
-                    <a href="vols/vols.html">Vols</a>
-                    <a href="../voyages/voyages.html">Voyages</a>
-                </div>
-            </header>
+                <div class="header-left" id="header-left">
+                  <ul class="liste">
+                    <li class="dropdown-item">
+                     <div class="link">
+                      Hotels
+                        <span class="material-symbols-outlined dropdown-arrow">
+                          expand_more
+                          </span>
+                     </div>
+                     <ul class="liste-hotels">
+                      <li>
+                        <a href="../hotels/hotels.html" class="hotel-link">Paris</a>
+          
+                      </li>
+                      <li>
+                        <a href="../hotels/bali.html" class="hotel-link">Dubai</a>
+          
+                      </li>
+                      <li>
+                        <a href="../hotels/turkie.html" class="hotel-link">Turkie</a>
+          
+                      </li>
+                      <li>
+                        <a href="../hotels/bali.html" class="hotel-link">Bali</a>
+          
+                      </li>
+          
+                     </ul>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="link">
+                        Vols
+                        <span class="material-symbols-outlined dropdown-arrow">
+                          expand_more
+                          </span>
+                      </div>
+                      <ul class="liste-hotels">
+                        <li>
+                          <a href="./vols.html" class="hotel-link">Paris</a>
+            
+                        </li>
+                        <li>
+                          <a href="./Vdubai.html" class="hotel-link">Dubai</a>
+            
+                        </li>
+                        <li>
+                          <a href="./Vturk.html" class="hotel-link">Turkie</a>
+            
+                        </li>
+                        <li>
+                          <a href="./Vbali.html" class="hotel-link">Bali</a>
+            
+                        </li>
+            
+                       </ul>
+                      
+                    </li> 
+                    <li>
+                      <a class="link" href="../voyages/voyages.html">Voyages</a>
+                    </li> 
+          
+                  </ul>
+                  
+                </div> 
+              </header>
             <div class="home">
                 <div class="inputs">
                     <input type="text" placeholder="Choisissez votre destination ! ">
@@ -62,7 +131,11 @@
                     </div>
                     <div class="distination"></div>
                     <div class="time"></div>
-                    <div class="reservation"></div>
+                    <div class="reservation">
+                        <P>€284 / person <br> 
+                            €567 total</P>
+                        <button>Reserver</button>
+                    </div>
                 </div>
                 <div class="vol"></div>
                 <div class="vol"></div>
