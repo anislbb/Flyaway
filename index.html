@@ -180,13 +180,13 @@
         <img src="img/TITRE.png" alt="">
       </div>
       <div class="lesAvis">
-        <button>
+        <button onclick="prevComment()">
           < </button>
             <div class="avis">
               <div class="client">
-                <img src="img/nadir.jpg.jpg" alt="">
+                <img id="gallery-images" src="" alt="">
                 <div class="nom">
-                  <b>Nadir Djahed </b>
+                  <b id="liste-nom"> </b>
                   <P class="V">voyageur vérifié</P>
                 </div>
                 <span class="material-symbols-outlined">
@@ -194,18 +194,10 @@
                 </span>
               </div>
               <div class="commentaire">
-                <P>"Mon expérience avec l'agence de voyage FlyAway a été <br>
-                  exceptionnelle du début à la fin. Leur équipe était très <br>
-                  professionnelle et compétente, offrant des conseils utiles et des <br>
-                  recommandations personnalisées pour notre voyage. Ils ont été <br>
-                  très réactifs à toutes nos demandes et ont pris en charge tous les <br>
-                  détails, ce qui nous a permis de profiter pleinement de notre séjour <br>
-                  sans soucis. Je recommande vivement cette agence à tous ceux qui <br>
-                  recherchent un service de qualité et une expérience de voyage sans <br>
-                  stress"</P>
+                <P id="liste-cmnt"></P>
               </div>
             </div>
-            <button> > </button>
+            <button onclick="nextComment()"> > </button>
       </div>
 
     </div>

@@ -470,6 +470,10 @@ header ul
     border: none;
     background-color: transparent;
 }
+.lesAvis button:hover
+{
+    cursor: pointer;
+}
 
 .avis {
     --shadow-color: 38deg 19% 39%;;
@@ -523,6 +527,13 @@ header ul
 .nom P {
     margin: 0;
     font-size: small;
+}
+.commentaire
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80% ;
 }
 
 .n3 {
