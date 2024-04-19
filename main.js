@@ -49,3 +49,27 @@ function nextComment()
     showComment();
 }
 showComment();
+
+const wrapper = document.querySelector(".up");
+const registrerLink = document.querySelector(".registrer-link");
+const loginLink = document.querySelector(".login-link");
+registrerLink.addEventListener('click',()=>{
+    wrapper.classList.add('active');
+});
+loginLink.addEventListener('click',()=>{
+   wrapper.classList.remove('active');
+});
+
+const btnPopup = document.querySelector('.account');
+const iconClose = document.querySelector('.closee');
+const home= document.getElementById('home');
+
+btnPopup.addEventListener('click', () =>{
+    wrapper.classList.add('active-popup');
+    home.classList.add('hm');
+
+});
+iconClose.addEventListener('click', () =>{
+    wrapper.classList.remove('active-popup');
+    home.classList.remove('hm');
+});
