@@ -189,6 +189,11 @@ header ul
     {
         transform: rotate(180deg);
     }
+
+    .person
+    {
+        display: none;
+    }
 }
 @media  screen and (min-width:1118PX )
 {
@@ -241,7 +246,7 @@ header ul
         overflow: initial;
         position: absolute;
         left: 0;
-        top: 50px;
+        top: 20px;
         opacity: 0;
         pointer-events: none;
         transition: opacity .3s, top .3s;
@@ -264,7 +269,7 @@ header ul
       .dropdown-item:hover .liste-hotels
        {
         opacity: 1;
-        top:40px;
+        top:25px;
         pointer-events: initial;
         transition: top .3s;
        }
